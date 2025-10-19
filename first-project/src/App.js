@@ -17,7 +17,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-
         </Routes>
         <Footer /> {/* Footer always visible at bottom */}
       </div>

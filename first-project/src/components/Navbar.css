@@ -48,3 +48,39 @@
     transform: translateY(-2px);
     /* slight lift for animation */
 }
+
+/* --- MOBILE RESPONSIVENESS: Apply styles when screen width is 768px or less --- */
+@media (max-width: 768px) {
+
+    /* 1. Collapse the main navbar container */
+    .navbar {
+        /* Force the logo and the links container to stack vertically */
+        flex-direction: column;
+        /* Add more padding for better touch spacing */
+        padding: 15px 15px;
+    }
+
+    /* 2. Style the links container for vertical stacking */
+    .nav-links {
+        /* Remove the horizontal flex and replace with a vertical stack */
+        flex-direction: column;
+        /* Links should take up the full width of the navbar */
+        width: 100%;
+        /* Reduce gap for vertical spacing */
+        gap: 10px;
+        /* Center the entire links section */
+        align-items: center;
+        margin-top: 10px;
+        /* Space below the logo */
+    }
+
+    /* 3. Style individual links to span the width */
+    .nav-link {
+        /* Make the link itself stretch for easier tapping */
+        width: 100%;
+        /* Ensure text remains centered within the wide link */
+        text-align: center;
+        padding: 10px 0;
+        /* Increase vertical padding */
+    }
+}
