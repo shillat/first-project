@@ -10,10 +10,16 @@ const Projects = () => {
                 description="A cool React project"
                 link="https://github.com/shillat/first-project"
             />
+            
             <Card
                 title="Project Two"
                 description="Another amazing project"
                 link="https://github.com/shillat/OLD-STUDENTS-ASSOCIATION-MANAGEMENT-SYSTEM.git"
+            />
+            <Card
+                title="Project Three"
+                description="Another amazing project"
+                link="https://github.com/bos-com/Online-Voting-System.git"
             />
         </div>
     );
