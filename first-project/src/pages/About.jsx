@@ -57,7 +57,7 @@ const About = () => {
     </p>
     <div style={badgeContainerStyle}>
         <a 
-            href="YOUR_CANVA_LINK_HERE" 
+            href="https://www.canva.com/design/DAG44kBXAFQ/uCvk8T_BQPCEQI1sqDEAJA/edit?utm_content=DAG44kBXAFQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
             target="_blank" 
             rel="noopener noreferrer" 
             style={canvaLinkStyle}
@@ -65,7 +65,7 @@ const About = () => {
             View Design Reports (Canva) ↗
         </a>
         <a 
-            href="YOUR_OTHER_CANVA_LINK" 
+            href="https://drive.google.com/file/d/1_KpM5-nWD5nlT6NH6zv1DvnxHVqdEYIl/view?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer" 
             style={canvaLinkStyle}
@@ -74,6 +74,7 @@ const About = () => {
         </a>
     </div>
 </div>
+                        
                     </div>
                 </div>
             </div>
