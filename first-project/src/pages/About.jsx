@@ -72,6 +72,14 @@ const About = () => {
         >
             System Documentation ↗
         </a>
+         <a 
+            href="https://drive.google.com/file/d/17yBu2BMdLxUhUzMaqk3RxRNopRG7brS6/view?usp=sharing" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={canvaLinkStyle}
+        >
+            Word Docs ↗
+        </a>
     </div>
 </div>
                         
