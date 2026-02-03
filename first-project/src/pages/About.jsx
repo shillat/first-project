@@ -1,67 +1,142 @@
-// src/pages/About.jsx
+import React from 'react';
 
 const About = () => {
     return (
-        <div className="about-container" style={{ padding: '2rem', maxWidth: '1000px', margin: '0 auto' }}>
-            <h1 style={{ borderBottom: '2px solid #61dafb', display: 'inline-block', marginBottom: '2rem' }}>About Me</h1>
-            
-            <div className="about-layout" style={{ display: 'flex', gap: '3rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+        <div className="about-page" style={pageStyle}>
+            {/* Main Container Wrapper */}
+            <div className="about-card-container" style={containerStyle}>
                 
-                {/* Image Column */}
-                <div className="about-image" style={{ flex: '1', minWidth: '300px' }}>
-                    <img 
-                        src="./profile-pic.jpg" 
-                        alt="Shillah Naigaga" 
-                        style={{ 
-                            width: '100%', 
-                            borderRadius: '15px', 
-                            boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
-                            border: '1px solid #ddd'
-                        }} 
-                    />
-                </div>
-
-                {/* Text Column */}
-                <div className="about-text" style={{ flex: '2', minWidth: '300px' }}>
-                    <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-                        I am <strong>Shillah Naigaga</strong>, a dedicated Software Engineering student with a deep passion for building 
-                        robust and intuitive web experiences. My technical focus lies primarily in <strong>front-end development</strong>, 
-                        where I enjoy merging creative design with clean, functional code.
-                    </p>
-
-                    <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-                        I am enthusiastic about the <strong>JavaScript ecosystem</strong>, specializing in <strong>React</strong> for 
-                        creating modern, dynamic user interfaces. Beyond the client-side, I also pursue backend development with 
-                        strong interests in <strong>Node.js</strong> and <strong>Java</strong>.
-                    </p>
+                <h1 style={headerStyle}>About Me</h1>
+                
+                <div className="about-content" style={layoutStyle}>
                     
-                    <p style={{ fontSize: '1.1rem', marginBottom: '1.2rem', color: '#555' }}>
-                        Beyond technical implementation, I am a <strong>strategic leader</strong>. I believe that great software isn't just written—it's led. 
-                        I encompass technical skills into leadership by fostering collaborative environments, streamlining development workflows 
-                        through <strong>CI/CD automation</strong>, and translating complex technical requirements into actionable team goals.
-                    </p>
-                    
-                    <div className="skills-expertise" style={{ marginTop: '2rem' }}>
-                        <h3>Technical Expertise</h3>
-                        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '1rem' }}>
-                            {['React.js', 'Node.js', 'Java', 'CI/CD'].map((skill) => (
-                                <span key={skill} style={{ 
-                                    background: '#61dafb', 
-                                    color: '#fff',
-                                    padding: '5px 15px', 
-                                    borderRadius: '20px', 
-                                    fontWeight: 'bold',
-                                    fontSize: '0.8rem' 
-                                }}>
-                                    {skill}
-                                </span>
-                            ))}
+                    {/* Left Side: Profile Image */}
+                    <div className="about-image-wrapper" style={imageWrapperStyle}>
+                        <img 
+                            src="./profile-pic.jpg" 
+                            alt="Shillah Naigaga" 
+                            style={imageStyle} 
+                        />
+                        <div style={imageDecorationStyle}></div> {/* Decorative Gold/Blue Ring */}
+                    </div>
+
+                    {/* Right Side: Professional Bio */}
+                    <div className="about-text" style={textColumnStyle}>
+                        <p style={paragraphStyle}>
+                            I am <span style={{color: '#FFD700', fontWeight: 'bold'}}>Shillah Naigaga</span>, a dedicated Software Engineering student with a deep passion for building 
+                            robust and intuitive web experiences. My technical focus lies primarily in <strong>front-end development</strong>, 
+                            where I enjoy merging creative design with clean, functional code.
+                        </p>
+
+                        <p style={paragraphStyle}>
+                            I specialize in the <strong>JavaScript ecosystem</strong>, utilizing <strong>React</strong> to  
+                            create modern, dynamic user interfaces. Beyond the client-side, I also pursue backend development with 
+                            strong interests in <strong>Node.js</strong> and <strong>Java</strong>.
+                        </p>
+                        
+                        <p style={paragraphStyle}>
+                            As a <strong>strategic leader</strong>, I believe that great software isn't just written—it's led. 
+                            I streamline development workflows through <strong>CI/CD automation</strong> and translate complex technical requirements into actionable team goals.
+                        </p>
+                        
+                        <div className="expertise-section" style={{ marginTop: '2.5rem' }}>
+                            <h3 style={{ color: '#FFD700', marginBottom: '1rem' }}>Technical Expertise</h3>
+                            <div style={badgeContainerStyle}>
+                                {['React.js', 'Node.js', 'Java', 'CI/CD', 'Git', 'CSS3'].map((skill) => (
+                                    <span key={skill} style={badgeStyle}>
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     );
+};
+
+// --- Styles ---
+
+const pageStyle = {
+    backgroundColor: '#0a0a0a', // Midnight background
+    minHeight: '100vh',
+    padding: '100px 20px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+};
+
+const containerStyle = {
+    maxWidth: '1100px',
+    backgroundColor: '#141414', // Slightly lighter charcoal
+    padding: '3rem',
+    borderRadius: '20px',
+    border: '1px solid #333',
+    boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
+};
+
+const headerStyle = {
+    color: '#FFD700', // Gold title
+    fontSize: '2.5rem',
+    marginBottom: '3rem',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    letterSpacing: '3px',
+    borderBottom: '2px solid #FFD700',
+    display: 'inline-block',
+    paddingBottom: '10px'
+};
+
+const layoutStyle = {
+    display: 'flex',
+    gap: '4rem',
+    alignItems: 'center',
+    flexWrap: 'wrap'
+};
+
+const imageWrapperStyle = {
+    flex: '1',
+    minWidth: '300px',
+    position: 'relative'
+};
+
+const imageStyle = {
+    width: '100%',
+    borderRadius: '15px',
+    filter: 'grayscale(20%)',
+    border: '2px solid #333',
+    zIndex: '2',
+    position: 'relative'
+};
+
+const textColumnStyle = {
+    flex: '1.5',
+    minWidth: '300px'
+};
+
+const paragraphStyle = {
+    fontSize: '1.1rem',
+    lineHeight: '1.8',
+    color: '#e0e0e0', // Soft white for readability
+    marginBottom: '1.5rem'
+};
+
+const badgeContainerStyle = {
+    display: 'flex',
+    gap: '12px',
+    flexWrap: 'wrap'
+};
+
+const badgeStyle = {
+    background: 'rgba(30, 144, 255, 0.1)', // Subtle Blue background
+    color: '#1e90ff', // Vivid Blue text
+    border: '1px solid #1e90ff',
+    padding: '6px 18px',
+    borderRadius: '50px',
+    fontWeight: 'bold',
+    fontSize: '0.85rem',
+    transition: '0.3s'
 };
 
 export default About;
