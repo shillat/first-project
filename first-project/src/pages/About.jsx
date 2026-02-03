@@ -163,5 +163,20 @@ const badgeStyle = {
     fontSize: '0.85rem',
     transition: '0.3s'
 };
+const canvaLinkStyle = {
+    display: 'inline-block',
+    background: 'transparent',
+    color: '#FFD700', // Gold to match your theme
+    border: '1px solid #FFD700',
+    padding: '8px 20px',
+    borderRadius: '5px',
+    textDecoration: 'none',
+    fontSize: '0.9rem',
+    fontWeight: 'bold',
+    transition: '0.3s',
+    cursor: 'pointer'
+};
 
+// Add a hover effect in your mind (or use a class) 
+// so it glows when users point at it!
 export default About;
