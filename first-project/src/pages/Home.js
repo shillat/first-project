@@ -55,67 +55,67 @@ const Home = () => {
 
 // --- Styles ---
 
+
+
 const containerStyle = {
   minHeight: '85vh',
   display: 'flex',
   alignItems: 'center',
   padding: '0 10%',
-  backgroundColor: '#ffffff'
-};
-
-const contentLayout = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  gap: '40px',
-  flexWrap: 'wrap'
-};
-
-const textSectionStyle = {
-  flex: '1.2',
-  minWidth: '320px',
-  textAlign: 'left'
+  backgroundColor: '#0a0a0a', // Deep Black/Midnight background
+  color: '#ffffff'
 };
 
 const badgeStyle = {
-  color: '#61dafb',
+  color: '#4caf50', // Success Green for the "Available" status
   textTransform: 'uppercase',
   letterSpacing: '2px',
   fontWeight: 'bold',
   fontSize: '0.8rem',
-  marginBottom: '1rem'
+  marginBottom: '1rem',
+  border: '1px solid #4caf50',
+  padding: '4px 12px',
+  borderRadius: '20px',
+  display: 'inline-block'
 };
 
 const headlineStyle = {
   fontSize: 'clamp(2.5rem, 5vw, 4rem)',
   lineHeight: '1.1',
   margin: '0 0 1.5rem 0',
-  color: '#222'
+  color: '#ffffff'
+};
+
+// We use Gold here to emphasize your leadership and specialty
+const highlightStyle = {
+  color: '#FFD700', // Gold/Yellow
 };
 
 const subTextStyle = {
   fontSize: '1.2rem',
-  color: '#555',
+  color: '#cccccc', // Soft Gray for readability on black
   lineHeight: '1.6',
   marginBottom: '2.5rem',
   maxWidth: '550px'
 };
 
-const buttonGroupStyle = {
-  display: 'flex',
-  gap: '15px'
+const primaryBtnStyle = {
+  backgroundColor: '#FFD700', // Gold Button - draws the eye immediately
+  color: '#000', // Black text for high contrast
+  padding: '14px 28px',
+  borderRadius: '8px',
+  textDecoration: 'none',
+  fontWeight: 'bold',
+  boxShadow: '0 4px 15px rgba(255, 215, 0, 0.3)' // Subtle glow
 };
 
-const visualSectionStyle = {
-  flex: '1',
-  display: 'flex',
-  justifyContent: 'center',
-  position: 'relative'
-};
-
-const illustrationContainer = {
-  position: 'relative',
-  zIndex: '2'
+const secondaryBtnStyle = {
+  border: '2px solid #ffffff',
+  color: '#ffffff',
+  padding: '12px 26px',
+  borderRadius: '8px',
+  textDecoration: 'none',
+  fontWeight: 'bold'
 };
 
 const blobStyle = {
@@ -125,29 +125,10 @@ const blobStyle = {
   transform: 'translate(-50%, -50%)',
   width: '300px',
   height: '300px',
-  backgroundColor: 'rgba(97, 218, 251, 0.1)',
+  backgroundColor: 'rgba(255, 215, 0, 0.1)', // Gold glow behind your image
   borderRadius: '50%',
-  filter: 'blur(40px)',
+  filter: 'blur(60px)',
   zIndex: '-1'
-};
-
-const primaryBtnStyle = {
-  backgroundColor: '#222',
-  color: '#fff',
-  padding: '14px 28px',
-  borderRadius: '8px',
-  textDecoration: 'none',
-  fontWeight: 'bold',
-  transition: '0.3s'
-};
-
-const secondaryBtnStyle = {
-  border: '2px solid #222',
-  color: '#222',
-  padding: '12px 26px',
-  borderRadius: '8px',
-  textDecoration: 'none',
-  fontWeight: 'bold'
 };
 
 export default Home;
