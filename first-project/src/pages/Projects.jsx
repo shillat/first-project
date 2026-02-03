@@ -13,7 +13,7 @@ const Projects = () => {
             <Card
                 title="Project Two"
                 description="Another amazing project"
-                link="https://github.com/shillat/second-project"
+                link="https://github.com/shillat/OLD-STUDENTS-ASSOCIATION-MANAGEMENT-SYSTEM.git"
             />
         </div>
     );
