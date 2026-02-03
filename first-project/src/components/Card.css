@@ -1,24 +1,35 @@
-/* Card.css */
 .card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 400px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background: #141414;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-12px); /* Lifts the card */
+    border-color: #FFD700; /* Glows Gold */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-.card h3 {
-    color: #1e3c72;
+.card-title {
+    color: #FFD700;
     margin-bottom: 15px;
 }
 
-.card p {
-    color: #333;
-    margin-bottom: 20px;
+.card-description {
+    color: #b3b3b3;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.card-link {
+    color: #4caf50; /* Green Action color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
