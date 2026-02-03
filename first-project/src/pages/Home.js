@@ -38,7 +38,7 @@ const Home = () => {
           {/* This is where your tech illustration goes */}
           <div style={illustrationContainer}>
              <img 
-                src="./hero-illustration.svg" 
+                src="./hero-illustration.jpg" 
                 alt="Software Engineering Concept" 
                 style={{ width: '100%', maxWidth: '500px', height: 'auto' }}
                 onError={(e) => e.target.style.display='none'} // Hides broken icon if file missing
