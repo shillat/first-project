@@ -10,7 +10,7 @@ const About = () => {
                 {/* Image Column */}
                 <div className="about-image" style={{ flex: '1', minWidth: '300px' }}>
                     <img 
-                        src="/profile-pic.jpg" 
+                        src="./profile-pic.jpg" 
                         alt="Shillah Naigaga" 
                         style={{ 
                             width: '100%', 
