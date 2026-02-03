@@ -67,31 +67,25 @@ const About = () => {
                         </div>
                        {/* Design & Documentation Buttons with Hovers */}
                         <div className="design-section" style={{ marginTop: '2.5rem' }}>
-                            <h3 style={{ color: '#FFD700', marginBottom: '1rem' }}>Design & Documentation</h3>
-                            <div style={badgeContainerStyle}>
-                                <a 
-                                    href="https://www.canva.com/design/DAG44kBXAFQ/uCvk8T_BQPCEQI1sqDEAJA/edit?utm_content=DAG44kBXAFQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
-                                    target="_blank" rel="noopener noreferrer" style={canvaLinkStyle}
-                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                                >
-                                    View Design Reports (Canva) ↗
-                                </a>
-                                <a 
-                                    href="https://drive.google.com/file/d/1_KpM5-nWD5nlT6NH6zv1DvnxHVqdEYIl/view?usp=sharing" 
-                                    target="_blank" rel="noopener noreferrer" style={canvaLinkStyle}
-                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                                >
-                                    System Documentation ↗
-                                </a>
-                                <a 
-                                    href="https://drive.google.com/file/d/17yBu2BMdLxUhUzMaqk3RxRNopRG7brS6/view?usp=sharing" 
-                                    target="_blank" rel="noopener noreferrer" style={canvaLinkStyle}
-                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                                >
-                                    Word Docs ↗
-                                </a>
-                            </div>
-                        </div>
+    <h3 style={{ color: '#FFD700', marginBottom: '1rem' }}>Design & Documentation</h3>
+    <div style={badgeContainerStyle}>
+        
+        {MY_DOCUMENTS.map((doc) => (
+            <a 
+                key={doc.name}
+                href={doc.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={canvaLinkStyle}
+                onMouseEnter={handleMouseEnter} 
+                onMouseLeave={handleMouseLeave}
+            >
+                {doc.name} ↗
+            </a>
+        ))}
+
+    </div>
+</div>
                         
                     </div>
                 </div>
