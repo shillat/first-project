@@ -39,7 +39,7 @@ const Home = () => {
           <div style={illustrationContainer}>
              <img 
                 src="./hero-illustration.jpg" 
-                alt="Software Engineering Concept" 
+                alt="Software Engineering Concepts" 
                 style={{ width: '100%', maxWidth: '500px', height: 'auto' }}
                 onError={(e) => e.target.style.display='none'}
              />
