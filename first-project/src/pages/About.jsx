@@ -1,4 +1,5 @@
 import React from 'react';
+import { MY_DOCUMENTS } from './DocumentData';
 
 const About = () => {
     // This function handles the "Glow and Lift" when you touch the button
