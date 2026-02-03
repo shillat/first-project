@@ -1,35 +1,47 @@
 .card {
-    background: #141414;
-    border: 1px solid #333;
-    border-radius: 15px;
+    background-color: #1a1a1a; /* Charcoal - distinct from the black page */
+    border: 1px solid #333;    /* Subtle border defines the card shape */
+    border-radius: 12px;
     padding: 30px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Hover effect to make the card "pop" */
 .card:hover {
-    transform: translateY(-12px); /* Lifts the card */
-    border-color: #FFD700; /* Glows Gold */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    transform: translateY(-8px);
+    border-color: #FFD700; /* Gold glow on hover */
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
 }
 
 .card-title {
-    color: #FFD700;
+    color: #FFD700; /* Gold - High visibility */
+    font-size: 1.4rem;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .card-description {
-    color: #b3b3b3;
+    color: #cccccc; /* Light Gray/Silver - readable on dark background */
+    font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 25px;
-    font-size: 0.95rem;
 }
 
-.card-link {
-    color: #4caf50; /* Green Action color */
+.btn-project {
+    display: inline-block;
+    color: #4caf50; /* Green action color */
     text-decoration: none;
-    font-weight: bold;
-    font-size: 0.8rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
     letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.btn-project:hover {
+    color: #FFD700; /* Switches to Gold when you point at it */
 }
