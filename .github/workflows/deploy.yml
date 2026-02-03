@@ -22,6 +22,7 @@ jobs:
           node-version: 18
 
       - name: Install and Build
+        # This line tells the robot to walk into the 'first-project' folder first
         working-directory: ./first-project
         run: |
           npm install --legacy-peer-deps
@@ -30,8 +31,8 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # We use "./build/" to be absolute about the location
-          path: ./build/
+          # This tells GitHub the final website is inside that folder's build directory
+          path: first-project/build/
 
   deploy:
     needs: build
