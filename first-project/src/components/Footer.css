@@ -1,18 +1,29 @@
 /* Footer.css */
 .footer {
-    background-color: #212529;
-    color: #ffd700;
+    background-color: #0a0a0a; /* Matches your About page background */
+    color: #FFD700;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px; /* More padding looks more professional */
     margin-top: 50px;
+    border-top: 1px solid #333; /* Subtle line to separate content */
+}
+
+.footer p {
+    margin-bottom: 10px;
 }
 
 .footer a {
-    color: #ffd700;
-    margin: 0 10px;
+    color: #FFD700;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease; /* Smooth transition for the hover */
+    display: inline-block;
 }
 
+/* Hover effect to match your Canva buttons */
 .footer a:hover {
-    text-decoration: underline;
+    color: #ffffff;
+    transform: translateY(-3px); /* Lifts the link slightly */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Gold glow */
 }
