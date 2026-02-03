@@ -44,7 +44,7 @@ const About = () => {
                     <div className="skills-expertise" style={{ marginTop: '2rem' }}>
                         <h3>Technical Expertise</h3>
                         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '1rem' }}>
-                            {['React.js', 'Node.js', 'PHP', 'CI/CD'].map((skill) => (
+                            {['React.js', 'Node.js', 'Java', 'CI/CD'].map((skill) => (
                                 <span key={skill} style={{ 
                                     background: '#61dafb', 
                                     color: '#fff',
