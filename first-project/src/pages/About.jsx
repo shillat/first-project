@@ -27,6 +27,7 @@ const About = () => {
                     
                     {/* Left Side: Profile Image */}
                     <div className="about-image-wrapper" style={imageWrapperStyle}>
+                        <div style={imageDecorationStyle}></div>
                         <img 
                             src="./profile-pic.jpg" 
                             alt="Shillah Naigaga" 
@@ -193,6 +194,16 @@ const canvaLinkStyle = {
     fontWeight: 'bold',
     transition: '0.3s',
     cursor: 'pointer'
+};
+const imageDecorationStyle = {
+    position: 'absolute',
+    top: '-10px',
+    left: '-10px',
+    width: 'calc(100% + 20px)',
+    height: 'calc(100% + 20px)',
+    border: '2px solid #FFD700', // Matches your Gold theme
+    borderRadius: '20px',        // Slightly more rounded than the photo
+    zIndex: '1'
 };
 
 // Add a hover effect in your mind (or use a class) 
