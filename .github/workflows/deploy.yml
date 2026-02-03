@@ -22,7 +22,7 @@ jobs:
           node-version: 18
 
       - name: Install and Build
-        # This tells GitHub to look in the root folder properly
+        working-directory: ./first-project
         run: |
           npm install --legacy-peer-deps
           CI=false npm run build
