@@ -21,7 +21,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Clean Install and Build
+      - name: Install and Build
+        # This tells GitHub to look in the root folder properly
         run: |
           npm install --legacy-peer-deps
           CI=false npm run build
@@ -29,7 +30,8 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build/
+          # We use "./build/" to be absolute about the location
+          path: ./build/
 
   deploy:
     needs: build
