@@ -4,14 +4,19 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
+       <nav className="navbar">
             <div className="navbar-container">
-                {/* Logo Section */}
-                <h2 className="logo">
-                    <Link to="/" className="logo-link">
-                        Shillah Naigaga
+                {/* Logo Section with Avatar */}
+                <div className="logo-section">
+                    <Link to="/" className="logo-link" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                        <img 
+                            src="./profile-pic.jpg" 
+                            alt="Shillah Naigaga" 
+                            className="nav-avatar"
+                        />
+                        <span className="logo-text">Shillah Naigaga</span>
                     </Link>
-                </h2>
+                </div>
 
                 {/* Navigation Links */}
                 <div className="nav-links">
