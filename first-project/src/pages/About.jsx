@@ -49,6 +49,31 @@ const About = () => {
                                 ))}
                             </div>
                         </div>
+                        <div className="design-section" style={{ marginTop: '2.5rem' }}>
+    <h3 style={{ color: '#FFD700', marginBottom: '1rem' }}>Design & Documentation</h3>
+    <p style={{ ...paragraphStyle, fontSize: '0.95rem', marginBottom: '1rem' }}>
+        I create comprehensive technical reports, system architectures, and UI/UX prototypes. 
+        You can view my design work and project documentation here:
+    </p>
+    <div style={badgeContainerStyle}>
+        <a 
+            href="YOUR_CANVA_LINK_HERE" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={canvaLinkStyle}
+        >
+            View Design Reports (Canva) ↗
+        </a>
+        <a 
+            href="YOUR_OTHER_CANVA_LINK" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={canvaLinkStyle}
+        >
+            System Documentation ↗
+        </a>
+    </div>
+</div>
                     </div>
                 </div>
             </div>
