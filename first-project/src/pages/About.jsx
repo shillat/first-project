@@ -1,6 +1,21 @@
 import React from 'react';
 
 const About = () => {
+    // This function handles the "Glow and Lift" when you touch the button
+    const handleMouseEnter = (e) => {
+        e.currentTarget.style.transform = 'translateY(-5px)';
+        e.currentTarget.style.backgroundColor = 'rgba(255, 215, 0, 0.1)';
+        e.currentTarget.style.boxShadow = '0 5px 15px rgba(255, 215, 0, 0.4)';
+        e.currentTarget.style.borderColor = '#ffffff';
+    };
+
+    // This function puts it back to normal when you stop touching it
+    const handleMouseLeave = (e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+        e.currentTarget.style.backgroundColor = 'transparent';
+        e.currentTarget.style.boxShadow = 'none';
+        e.currentTarget.style.borderColor = '#FFD700';
+    };
     return (
         <div className="about-page" style={pageStyle}>
             {/* Main Container Wrapper */}
@@ -49,39 +64,33 @@ const About = () => {
                                 ))}
                             </div>
                         </div>
+                       {/* Design & Documentation Buttons with Hovers */}
                         <div className="design-section" style={{ marginTop: '2.5rem' }}>
-    <h3 style={{ color: '#FFD700', marginBottom: '1rem' }}>Design & Documentation</h3>
-    <p style={{ ...paragraphStyle, fontSize: '0.95rem', marginBottom: '1rem' }}>
-        I create comprehensive technical reports, system architectures, and UI/UX prototypes. 
-        You can view my design work and project documentation here:
-    </p>
-    <div style={badgeContainerStyle}>
-        <a 
-            href="https://www.canva.com/design/DAG44kBXAFQ/uCvk8T_BQPCEQI1sqDEAJA/edit?utm_content=DAG44kBXAFQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={canvaLinkStyle}
-        >
-            View Design Reports (Canva) ↗
-        </a>
-        <a 
-            href="https://drive.google.com/file/d/1_KpM5-nWD5nlT6NH6zv1DvnxHVqdEYIl/view?usp=sharing" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={canvaLinkStyle}
-        >
-            System Documentation ↗
-        </a>
-         <a 
-            href="https://drive.google.com/file/d/17yBu2BMdLxUhUzMaqk3RxRNopRG7brS6/view?usp=sharing" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={canvaLinkStyle}
-        >
-            Word Docs ↗
-        </a>
-    </div>
-</div>
+                            <h3 style={{ color: '#FFD700', marginBottom: '1rem' }}>Design & Documentation</h3>
+                            <div style={badgeContainerStyle}>
+                                <a 
+                                    href="https://www.canva.com/design/DAG44kBXAFQ/uCvk8T_BQPCEQI1sqDEAJA/edit?utm_content=DAG44kBXAFQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                                    target="_blank" rel="noopener noreferrer" style={canvaLinkStyle}
+                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                                >
+                                    View Design Reports (Canva) ↗
+                                </a>
+                                <a 
+                                    href="https://drive.google.com/file/d/1_KpM5-nWD5nlT6NH6zv1DvnxHVqdEYIl/view?usp=sharing" 
+                                    target="_blank" rel="noopener noreferrer" style={canvaLinkStyle}
+                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                                >
+                                    System Documentation ↗
+                                </a>
+                                <a 
+                                    href="https://drive.google.com/file/d/17yBu2BMdLxUhUzMaqk3RxRNopRG7brS6/view?usp=sharing" 
+                                    target="_blank" rel="noopener noreferrer" style={canvaLinkStyle}
+                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                                >
+                                    Word Docs ↗
+                                </a>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
