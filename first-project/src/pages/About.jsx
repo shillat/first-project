@@ -17,7 +17,7 @@ const About = () => {
                             alt="Shillah Naigaga" 
                             style={imageStyle} 
                         />
-                        <div style={imageDecorationStyle}></div> {/* Decorative Gold/Blue Ring */}
+                        
                     </div>
 
                     {/* Right Side: Professional Bio */}
