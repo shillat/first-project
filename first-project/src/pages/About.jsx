@@ -32,7 +32,7 @@ const About = () => {
                     <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
                         I am enthusiastic about the <strong>JavaScript ecosystem</strong>, specializing in <strong>React</strong> for 
                         creating modern, dynamic user interfaces. Beyond the client-side, I also pursue backend development with 
-                        strong interests in <strong>Node.js</strong> and <strong>PHP</strong>.
+                        strong interests in <strong>Node.js</strong> and <strong>Java</strong>.
                     </p>
                     
                     <p style={{ fontSize: '1.1rem', marginBottom: '1.2rem', color: '#555' }}>
