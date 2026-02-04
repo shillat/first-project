@@ -1,5 +1,5 @@
 // src/App.js
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/Home';
@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter basename="/first-project">
+    <HashRouter basename="/first-project">
       <div className="App">
         <Navbar />
         <Routes>
