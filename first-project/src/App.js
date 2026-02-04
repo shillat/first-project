@@ -13,14 +13,14 @@ function App() {
     <HashRouter basename="/first-project">
       <div className="App">
         <Navbar />
-        <Routes>
+        <Router>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-        </Routes>
+        </Router>
         <Footer /> {/* Footer always visible at bottom */}
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
