@@ -1,4 +1,3 @@
-// src/App.js
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -10,17 +9,21 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <HashRouter basename="/first-project">
+    // Use ONLY one Router. No basename needed for HashRouter.
+    <Router>
       <div className="App">
         <Navbar />
-        <Router>
+        
+        {/* All Routes must be inside the <Routes> component */}
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-        </Router>
-        <Footer /> {/* Footer always visible at bottom */}
+        </Routes>
+
+        <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
