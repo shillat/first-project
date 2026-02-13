@@ -24,6 +24,11 @@ const Projects = () => {
                     description="A secure digital voting platform focusing on integrity, transparency, and user-friendly interfaces."
                     link="https://github.com/bos-com/Online-Voting-System.git"
                 />
+                <Card
+    title="Naiga Chatbot"
+    description="A sleek, lead-generation interface designed to streamline user inquiries by capturing messages and delivering them directly to a designated email inbox."
+    link="https://github.com/shillat/naiga-chatbot" 
+/>
             </div>
         </div>
     );
