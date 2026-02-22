@@ -10,7 +10,7 @@ const Projects = () => {
                 <Card
                     title="Portfolio Website"
                     description="A high-end personal branding site built with React, featuring a Midnight & Gold professional theme."
-                    link="https://github.com/shillat/first-project"
+                    link="https://first-project-olive-one.vercel.app/"
                 />
                 
                 <Card
@@ -27,8 +27,13 @@ const Projects = () => {
                 <Card
     title="Naiga Chatbot"
     description="A sleek, lead-generation interface designed to streamline user inquiries by capturing messages and delivering them directly to a designated email inbox."
-    link="https://github.com/shillat/naiga-chatbot" 
+    link="https://naiga-chatbot.vercel.app/" 
 />
+                 <Card
+                    title="Pearl Explore Concept"
+                    description="An immersive, high-end web experience showcasing the natural beauty and cultural heritage of Uganda."
+                    link="https://pearl-explorer-concept.vercel.app/"
+                />
             </div>
         </div>
     );
